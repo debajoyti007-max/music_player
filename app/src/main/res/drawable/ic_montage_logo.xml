@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Circular Obsidian Background -->
+    <path
+        android:fillColor="#181818"
+        android:pathData="M24,24m-22,0a22,22 0,1 1,44 0a22,22 0,1 1,-44 0" />
+    <path
+        android:strokeColor="#1DB954"
+        android:strokeWidth="1.5"
+        android:pathData="M24,24m-22,0a22,22 0,1 1,44 0a22,22 0,1 1,-44 0" />
+    <!-- Bar 1 (Left Leg) -->
+    <path
+        android:fillColor="#1DB954"
+        android:pathData="M11,18 h4 a2,2 0 0 1 2,2 v12 a2,2 0 0 1 -2,2 h-4 a2,2 0 0 1 -2,-2 v-12 a2,2 0 0 1 2,-2 z" />
+    <!-- Bar 2 (Mid-Left Slope) -->
+    <path
+        android:fillColor="#1ED760"
+        android:pathData="M17.5,23 h4 a2,2 0 0 1 2,2 v7 a2,2 0 0 1 -2,2 h-4 a2,2 0 0 1 -2,-2 v-7 a2,2 0 0 1 2,-2 z" />
+    <!-- Bar 3 (Center Peak Pulse) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M24,14 h4 a2,2 0 0 1 2,2 v16 a2,2 0 0 1 -2,2 h-4 a2,2 0 0 1 -2,-2 v-16 a2,2 0 0 1 2,-2 z" />
+    <!-- Bar 4 (Mid-Right Slope) -->
+    <path
+        android:fillColor="#1ED760"
+        android:pathData="M30.5,23 h4 a2,2 0 0 1 2,2 v7 a2,2 0 0 1 -2,2 h-4 a2,2 0 0 1 -2,-2 v-7 a2,2 0 0 1 2,-2 z" />
+    <!-- Bar 5 (Right Leg) -->
+    <path
+        android:fillColor="#1DB954"
+        android:pathData="M37,18 h4 a2,2 0 0 1 2,2 v12 a2,2 0 0 1 -2,2 h-4 a2,2 0 0 1 -2,-2 v-12 a2,2 0 0 1 2,-2 z" />
+</vector>
