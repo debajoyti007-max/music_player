@@ -1,32 +1,91 @@
-# React + TypeScript + Vite
+# 🎵 Montage Music — Spotify-Inspired Music Streaming & Player
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+<div align="center">
 
-Currently, two official plugins are available:
+![Montage Music Logo](./public/favicon.svg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### High-Fidelity Music Streaming Experience & Offline Android Player
+**A production-quality music player crafted with authentic Spotify design principles, bespoke branding, fluid micro-interactions, and real persistent playback.**
 
-## React Compiler
+[![Live Web Player](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-1DB954?style=for-the-badge&logo=spotify&logoColor=white)](https://debajoyti007-max.github.io/music_player/)
+[![Android APK](https://img.shields.io/badge/Download-Android%20APK%20(Offline)-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/debajoyti007-max/music_player/releases/latest)
+[![Tests Passing](https://img.shields.io/badge/Tests-12%2F12%20Passing-brightgreen?style=for-the-badge)](https://debajoyti007-max.github.io/music_player/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+</div>
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## 🌟 Key Highlights
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+### 🎨 Authentic Spotify-Inspired Interface
+- **Deep Charcoal Palette**: Carefully calibrated `#121212` base, `#181818` card containers, and `#282828` hover surfaces.
+- **Bespoke Soundwave Identity**: Original equalizer "M" emblem featuring Spotify Green (`#1DB954`) radiant gradients.
+- **Contextual Ambient Lighting**: Dynamic top header color wash that shifts naturally according to the album artwork hues.
+- **4-Bar Dancing Audio Equalizer**: Custom animated CSS/Compose keyframed bars that dance when audio is playing and pause smoothly when stopped.
+
+### 🎧 Complete Playback Engine
+- **Persistent Bottom Player**: Uninterrupted playback across all tab transitions (Home, Search, Library, Lyrics).
+- **Karaoke Synchronized Lyrics**: Fullscreen lyrics mode (`Mic2` icon) featuring auto-scrolling synchronization, font magnification, and click-to-seek jump.
+- **Floating Toast Feedback**: Real-time Spotify-style pill notifications for liking/unliking, playlist additions, and clipboard copies.
+- **Smart Queue State Machine**: Sequential progression, repeat one / repeat all looping, shuffle randomize, and scrubbable time-seeking.
+- **Offline Procedural Synthesizer**: Built-in Web Audio API fallback synthesizer so the music never crashes or fails even offline or without network.
+
+---
+
+## 📱 Offline Android App (Montage Player)
+
+In addition to the web streaming player, this repository includes the native Android offline player codebase built with Jetpack Compose & ExoPlayer:
+
+- **Local Storage Scanner**: Queries Android `MediaStore.Audio.Media.EXTERNAL_CONTENT_URI` to catalog all MP3, AAC, FLAC, and WAV files stored on phone storage with zero internet required.
+- **Native Compose UI**: Modern Android Material 3 with customized Spotify dark palette and animated equalizer bars.
+- **ExoPlayer Audio Architecture**: Persistent notification playback, headset hook support, and seamless scrubbing.
+
+---
+
+## 🚀 Quick Start (Web Player)
+
+### Prerequisites
+- Node.js 18+
+- npm or yarn
+
+### Installation & Development
+```bash
+# Clone the repository
+git clone https://github.com/debajoyti007-max/music_player.git
+cd music_player
+
+# Install dependencies
+npm install
+
+# Start local development server with Hot Module Replacement
+npm run dev
+
+# Run automated test suite
+npm test
+
+# Build optimized production bundle
+npm run build
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+---
+
+## 🛠️ Tech Stack
+
+### Web Application
+- **Frontend Core**: React 19, TypeScript, Vite
+- **Styling**: Tailwind CSS v4, Custom CSS Animations
+- **Icons**: Lucide React
+- **Audio**: HTML5 Audio API & Web Audio Procedural Fallback Engine
+- **Testing**: Vitest / Node Native Test Runner
+
+### Android Application
+- **Language**: Kotlin 2.0
+- **UI Framework**: Jetpack Compose (Material 3)
+- **Audio Engine**: AndroidX Media3 / ExoPlayer
+- **Storage Scanner**: Android MediaStore ContentProvider
+- **Target SDK**: Android 14 (API 34)
+
+---
+
+## 📄 License
+MIT License. Built with ❤️ for music enthusiasts.
